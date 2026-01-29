@@ -271,6 +271,125 @@
       margin-right: 10px;
         
         }
+
+
+
+        /* ===== RESPONSIVE FIXES ===== */
+
+/* Universal fixes */
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation */
+.room {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.web a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Boxes (Facilities) */
+.university {
+  padding: 20px;
+  margin: 20px;
+}
+
+.box {
+  width: 100%;
+  max-width: 280px;
+  padding: 20px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* Courses section */
+.Courses {
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Containers */
+.container,
+.event,
+.links,
+.main {
+  padding: 30px;
+  margin: 15px;
+}
+
+/* Video section */
+.class {
+  justify-content: center;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+/* Logo */
+.logo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 40px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .room {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .web {
+    width: 90%;
+    text-align: center;
+  }
+
+  .depertment {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
         
 
 
@@ -317,7 +436,7 @@
     <section>
         <h1><i class="fa-solid fa-font-awesome" style="color: black;" style="font-size: 30px;"></i > Fecilites</h1>
     <div class="university">
-    <div class="box"> <h2>Classes</h2>         <img src="c:\Users\HP\Desktop\My project 1\assets\1.jpeg" width="100px" height="100px"> <p>Beatiy full enverment of our classes.</p></div>
+    <div class="box"> <h2>Classes</h2>         <img src="assets/1.jpeg" width="100px" height="100px"> <p>Beatiy full enverment of our classes.</p></div>
     <div class="box"> <h2> Library</h2>        <img src="assets/2.jpeg"><p> You can find any book and reads in better enverment.</p></div>
     <div class="box"> <h2> Addmitssion Office</h2>   <img src="assets/3.jpeg"><p> Get addmitint in this office</p></div>
     <div class="box"> <h2> Univesity Gournd </h2>   <img src="assets/4.jpeg"> <p>Students grournd of uneversity</p> </div>
