@@ -4,36 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Caveat:wght@400..700&family=Mada:wght@200..900&family=Noto+Sans+Masaram+Gondi&family=Paprika&family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 
     <style>
         body {
-            font-family: Caveat;
-            margin: 20px;
+            font-family: 'Caveat', cursive;
+            margin: 0;
+            padding: 10px;
             background-color: #f9f9f9;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
+
         h1 {
             text-align: center;
             color: #333;
+            margin-bottom: 20px;
         }
+
+        h1 i {
+            margin-right: 10px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 0 auto 20px;
+            max-width: 95%;
+        }
+
         table {
-            width: 80%;
-            margin: 20px auto;
+            width: 100%;
             border-collapse: collapse;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-width: 500px; /* ensures scroll on small screens */
         }
+
         th, td {
             padding: 12px;
             border: 1px solid #ddd;
             text-align: center;
         }
+
         th {
             background-color: #f2f2f2;
         }
+
         img {
             display: block;
             margin: 20px auto;
@@ -42,116 +59,78 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-         .room{
-            color: aliceblue;
-            margin: 40px;
-            
-            
 
+        .room {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
         }
-          .web{
-            padding: 20px;
-            margin: 30px;
+
+        .web {
+            padding: 15px 20px;
             background-color: rgb(196, 188, 177);
             color: black;
-               border-radius: 10px;
-               width: 150px;
-               text-align: center;
-               display: inline-block;
-               
-               
-               
-               
+            border-radius: 10px;
+            text-align: center;
+            min-width: 120px;
+            transition: transform 0.3s, background-color 0.3s;
         }
-        .web:hover{
+
+        .web a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .web:hover {
             background-color: lightgreen;
             transform: scale(1.1);
         }
-        i{
-            color: #4e4e4e;
-            font-size: 50px;
+
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 1.2rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            .web {
+                width: 80%;
+            }
         }
-        
     </style>
 </head>
 <body>
     <h1><i class="fa-solid fa-hand"></i>Previous Results</h1>
-    <table border="1">
-        <tr>
-            <th>Student Name</th>
-            <th>Subject</th>
-            <th>Score</th>
-            <th>Grade</th>
-        </tr>
-        <tr>
-            <td>Anam</td>
-            <td>Mathematics</td>
-            <td>85</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <td>Ahmad</td>
-            <td>Science</td>
-            <td>78</td>
-            <td>B+</td>
-        </tr>
-        <tr>
-            <td>Emily Johnson</td>
-            <td>History</td>
-            <td>92</td>
-            <td>A+</td>
 
-        </tr>
-          <tr>
-            <td>Azar</td>
-            <td>History</td>
-            <td>92</td>
-            <td>A+</td>
-            
-        </tr>
-          <tr>
-            <td>Ali</td>
-            <td>History</td>
-            <td>92</td>
-            <td>A+</td>
-            
-        </tr>
-          <tr>
-            <td>Raza</td>
-            <td>History</td>
-            <td>92</td>
-            <td>A+</td>
-
-            
-        </tr>
-          <tr>
-            <td>Reyan</td>
-            <td>History</td>
-            <td>92</td>
-            <td>A+</td>
-            
-        </tr>
-          <tr>
-            <td>Shah</td>
-            <td>History</td>
-            <td>92</td>
-            <td>A+</td>
-            
-        </tr>
-    </table>
-    <img src="assets/7.jpeg" alt="Results Chart">
-     <div class="room">
-
-     <div class="web"> <a href="Home.html">Home</a></div>
-      
-      <div class="web"> <a href="students Registration.html"> Sing Up</div>
-      <div class="web"><a href="Ranking.html">Top Ranking</a></div>
-      
-           </div>
-    
-
-
-
-    
-</body>
-</html>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <th>Subject</th>
+                <th>Score</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Anam</td>
+                <td>Mathematics</td>
+                <td>85</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Ahmad</td>
+                <td>Science</td>
+                <td>78</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>History</td>
