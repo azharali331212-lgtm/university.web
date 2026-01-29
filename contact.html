@@ -4,123 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Caveat:wght@400..700&family=Mada:wght@200..900&family=Noto+Sans+Masaram+Gondi&family=Paprika&family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 
     <style>
-        body{
+        body {
             background-color: gray;
-            font-family: Caveat;
+            font-family: 'Caveat', cursive;
             font-weight: bolder;
-            font-size: 2rem;
-
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 0;
         }
-        header{
+
+        header {
             background-color: rgb(28, 28, 31);
             color: white;
             text-align: center;
-            padding: 5px;
+            padding: 10px 5px;
             font-size: 2rem;
-
         }
-        h2{
+
+        header i {
+            font-size: 50px;
+            color: antiquewhite;
+        }
+
+        h2 {
             text-align: center;
         }
-        .address{
-            padding: 5px;
-            margin: 5px;
+
+        p {
+            text-align: center;
+            margin: 0 10px 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 10px 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .address {
+            padding: 10px;
+            margin: 10px auto;
             background-color: rgb(141, 141, 141);
             color: black;
-               border-radius: 10px;
-               width: 400px;
-                margin-left: 100px;
-                
-
+            border-radius: 10px;
+            max-width: 100%;
+            text-align: center;
         }
-        
-        .address{
-             
-            justify-content: center;
-            gap: 15%;
 
+        .address iframe {
+            width: 100%;
+            max-width: 400px;
+            height: 250px;
+            border: 0;
+            margin: 10px 0;
         }
-        .room{
+
+        .room {
             color: aliceblue;
-            
-            
-
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
         }
-          .web{
-            padding: 20px;
-            margin: 20px;
+
+        .web {
+            padding: 15px 20px;
             background-color: rgb(196, 188, 177);
             color: black;
-               border-radius: 10px;
-               width: 150px;
-               text-align: center;
-               display: inline-block;
-               
-               
-               
-               
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+            min-width: 120px;
         }
-        .web:hover{
+
+        .web a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .web:hover {
             background-color: lightgreen;
             transform: scale(1.1);
         }
-        i{
+
+        i {
             color: #333;
             font-size: 30px;
         }
-        
 
-        </style>
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 1.2rem;
+            }
+
+            .room {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header {
+                font-size: 1.5rem;
+            }
+
+            header i {
+                font-size: 40px;
+            }
+
+            .web {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1><i class="fa-solid fa-circle-user" style="font-size: 50px; color: antiquewhite;"></i>University of Lahore</h1>
+        <h1><i class="fa-solid fa-circle-user"></i> University of Lahore</h1>
     </header>
-<div>
-    <h2><i class="fa-solid fa-phone"></i>Contact Us</h2>
-    <p>If you have any questions or need further information, please feel free to reach out to us through the following contact details:</p>
-    <ul>
-        <li><strong>Phone:</strong> +92-42-111-865-865</li>
 
+    <div>
+        <h2><i class="fa-solid fa-phone"></i> Contact Us</h2>
+        <p>If you have any questions or need further information, please feel free to reach out to us through the following contact details:</p>
+        <ul>
+            <li><strong>Phone:</strong> +92-42-111-865-865</li>
+            <li><strong>Email:</strong> contact@uol.edu.pk</li>
+            <li class="address">
+                <h2><i class="fa-brands fa-twitch" style="font-size: 50px;"></i> Address</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.7894345612804!2d74.2394759762385!3d31.392369053453994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919018a8ea548c1%3A0x4a52db69c2c814f!2sThe%20University%20of%20Lahore!5e0!3m2!1sen!2s!4v1762422320659!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>University of Lahore, Main Campus, Defence Road, Lahore, Pakistan</p>
+            </li>
+            <li><strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM</li>
+        </ul>
 
-        
-        <li><strong>Email:</strong> 
-        <div class="address">
-            <h2> <i class="fa-brands fa-twitch" style="color: #333; font-size: 50px;"></i>Address</h2>
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.7894345612804!2d74.2394759762385!3d31.392369053453994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919018a8ea548c1%3A0x4a52db69c2c814f!2sThe%20University%20of%20Lahore!5e0!3m2!1sen!2s!4v1762422320659!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p>University of Lahore, Main Campus, Defence Road, Lahore, Pakistan</p>   
+        <div class="room">
+            <div class="web"><a href="Home.html">Home</a></div>
+            <div class="web"><a href="students Registration.html">Sign Up</a></div>
+            <div class="web"><a href="Ranking.html">Top Ranking</a></div>
+        </div>
     </div>
-
-          
-        </li>
-        <li><strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM</li>
-        
-    </ul>
-          <div class="room">
-
-     <div class="web"> <a href="Home.html">Home</a></div>
-      
-      <div class="web"> <a href="students Registration.html"> Sing Up</div>
-      <div class="web"><a href="Ranking.html">Top Ranking</a></div>
-      
-           </div>
-    
-
-        
-
-
-            
-
-    </div>
-
-            
-    
 </body>
 </html>
